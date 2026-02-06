@@ -48,7 +48,7 @@ function Login(){
             localStorage.setItem('token', token);
             localStorage.setItem('user', JSON.stringify(user));
 
-            console.log('User role:', res.role); // Debug log
+            console.log('User role:', user.role); // Debug log
             console.log('Full user object:', user); // Debug log
 
             if (user && user.role === "admin") {
