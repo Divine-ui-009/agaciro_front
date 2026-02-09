@@ -7,7 +7,9 @@ type Props = {
   role?: "admin" | "customer";
 };
 
-export default function ProtectedRoute({ children, role }: Props) {
+export default function ProtectedRoute({ children, 
+  role 
+}: Props) {
   const { user } = useAuth();
 
   if (!user) {
